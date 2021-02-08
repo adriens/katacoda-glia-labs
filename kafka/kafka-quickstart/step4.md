@@ -8,7 +8,7 @@ Run the console producer client to write a few events into your topic. By defaul
 line you enter will result in a separate event being written to the topic. 
 
 ```
-clear
+cd kafka
 bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 ```{{execute T5}}
 

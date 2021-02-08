@@ -26,15 +26,15 @@
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Kafka Connect",
         "text": "step6.md"
       },
       {
-        "title": "Step 7",
+        "title": "Kafka Streams",
         "text": "step7.md"
       },
       {
-        "title": "Step 8",
+        "title": "Streams Demo Application",
         "text": "step8.md"
       }
     ],
