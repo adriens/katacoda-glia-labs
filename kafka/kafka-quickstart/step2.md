@@ -2,9 +2,9 @@ First, start Zookeeper :
 
 ```
 bin/zookeeper-server-start.sh config/zookeeper.properties
-```{{execute Zookeeper}}
+```{{execute T1}}
 
 ```
 bin/kafka-server-start.sh config/server.properties
-```{{execute Broker}}
+```{{execute T2}}
 
