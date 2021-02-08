@@ -1,10 +1,12 @@
 First, start Zookeeper :
 
 ```
+cd kafka
 bin/zookeeper-server-start.sh config/zookeeper.properties
-```{{execute T1}}
+```{{execute T2}}
 
 ```
+cd kafka
 bin/kafka-server-start.sh config/server.properties
-```{{execute T2}}
+```{{execute T3}}
 
