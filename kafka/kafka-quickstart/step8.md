@@ -56,6 +56,7 @@ and inspect the output of the WordCount demo application by reading from its out
 topic with the console consumer in a separate terminal: 
 
 ```
+cd kafka
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 \
     --topic streams-wordcount-output \
     --from-beginning \

@@ -15,4 +15,4 @@ previous command again.
 Play between `Terminal 5` and `Terminal 6` :
 
 - Send a message from `Terminal 5`
-- See it being consumed in `Terminal 6`
+- See it being consumed in `Terminal 6` thus, appearing live in the console
