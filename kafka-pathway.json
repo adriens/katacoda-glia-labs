@@ -1,0 +1,11 @@
+{
+  "title": "Kafka",
+  "description": "A set of scenarios around various Kafka usages",
+  "courses": [
+    {
+      "course_id": "kafka-quickstart",
+      "title": "Kafka Quickstart",
+      "description": "To discover first Kafka usage, the easy way"
+    }
+  ]
+}
