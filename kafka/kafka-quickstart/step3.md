@@ -17,19 +17,20 @@ So before you can write your first events, you must create a topic.
 Let's open another terminal session and run: 
 
 ```
+cd kafka
 bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
-```{{execute}}
+```{{execute T4}}
 
 All of Kafka's command line tools have additional options. You can run the `kafka-topics.sh` command without
 any arguments to display usage information:
 
 ```
 bin/kafka-topics.sh
-```{{execute}}
+```{{execute T4}}
 
 If we want to get info about our newly created `quickstart-events` topic, just :
 
 ```
 bin/kafka-topics.sh --describe --topic quickstart-events --bootstrap-server localhost:9092
-```{{execute}}
+```{{execute T4}}
 
