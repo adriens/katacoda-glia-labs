@@ -47,7 +47,7 @@ And get Kafka :
 ```
 wget https://downloads.apache.org/kafka/${KAFKA_VERSION}/kafka_${KAFKA_SCALA_VERSION}-${KAFKA_VERSION}.tgz
 tar -xzf kafka_${KAFKA_SCALA_VERSION}-${KAFKA_VERSION}.tgz
-ln -s kafka_2.12-2.7.0
-kafkabin/zookeeper-server-start.sh config/zookeeper.properties
+ln -s kafka_2.12-2.7.0 kafka
+bin/zookeeper-server-start.sh config/zookeeper.properties
 cd kafka
 ```{{execute}}
