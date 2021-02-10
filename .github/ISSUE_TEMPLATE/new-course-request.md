@@ -1,21 +1,25 @@
 ---
 name: New course request
-about: 'New course request > '
+about: Ask to create a new course
 title: New course request > [COURSE_NAME]
 labels: new-course
 assignees: ''
 
 ---
 
-# Motivation
+# Prerequisites
 
-Please create a new course for <PUT_COURSE_NAME_HERE>
+- [ ] I have checked that this course does not already exist on your Katacoda organization
+- [ ] Target course name : `TARGET_COURSE_NAME`
+- [ ] Short motivation for this course creation
+
+# Motivation
 
 Because it could help me to better :
 
 - Reason 1
 - Reason 2
 
-# Scenarios
+# Scenario candidate #1
 
-In this course, I'd like to get the following scenario as sson as possible : <YOUR_SCENARIO_NAME_HERE> so I could : <EXPLAIN WHY>
+Please fill below the first (only one) scenario you'd like to get first, your `MVP`
