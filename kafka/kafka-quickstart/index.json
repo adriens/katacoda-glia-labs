@@ -2,7 +2,7 @@
   "title": "Kafka Quickstart",
   "description": "To discover first Kafka usage, the easy way",
   "difficulty": "Beginner",
-  "time": "15 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
@@ -46,7 +46,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "ubuntu:2004"
