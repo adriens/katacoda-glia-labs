@@ -48,4 +48,5 @@ And get Kafka :
 wget https://downloads.apache.org/kafka/${KAFKA_VERSION}/kafka_${KAFKA_SCALA_VERSION}-${KAFKA_VERSION}.tgz
 tar -xzf kafka_${KAFKA_SCALA_VERSION}-${KAFKA_VERSION}.tgz
 ln -s kafka_${KAFKA_SCALA_VERSION}-${KAFKA_VERSION} kafka
+ls -la
 ```{{execute}}
