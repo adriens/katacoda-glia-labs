@@ -20,6 +20,6 @@ Because it could help me to better :
 - Reason 1
 - Reason 2
 
-# Scenario candidate #1
+# Scenario candidate
 
 Please fill below the first (only one) scenario you'd like to get first, your `MVP`
