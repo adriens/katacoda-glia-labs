@@ -1,0 +1,42 @@
+{
+  "title": "Master the katacoda cli",
+  "description": "Learn how to manage katacoda content with the CLI",
+  "difficulty": "Beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Install",
+        "text": "step1.md"
+      },
+      {
+        "title": "Course creation",
+        "text": "step2.md"
+      },
+      {
+        "title": "Sceario creation",
+        "text": "step3.md"
+      },
+      {
+        "title": "Attach a scenario to a course",
+        "text": "step4.md"
+      },
+      {
+        "title": "Validate",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
