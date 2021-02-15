@@ -1,10 +1,6 @@
 # Prerequisites
 
-First update your linux :
-
-`sudo apt-get update`{{execute}}
-
-Add somme utilities :
+First add somme utilities :
 
 `sudo apt-get install -y tree`{{execute}}
 

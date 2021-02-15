@@ -32,9 +32,9 @@ Put the course name. Keep it short (less than 15 characters is ok) and clear :
 Then put a short yet understandable text to tell people what they will learn by running this
 course.
 
-**Keep in mind that a course is a set of scenarios, so it could be "Deal with PostgreSQL techniques".
+**Keep in mind that a course is a set of scenarios, so it could be "Deal with PostgreSQL techniques".**
 
-`This course is cool, some discover it`{{execute}}
+`This course is cool, come discover it`{{execute}}
 
 Next, the `friendly-url`, keeping it lower-case and short is a best practice.
 
@@ -42,7 +42,7 @@ Next, the `friendly-url`, keeping it lower-case and short is a best practice.
 
 Now, you should have this status :
 
-`Course created successfully.`{{execute}}
+`Course created successfully.`
 
 You have created a first - yet empty - course.
 

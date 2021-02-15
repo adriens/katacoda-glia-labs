@@ -8,6 +8,8 @@ Then :
 - Provide course path by hitting `first-course`{{execute}}
 - Select the `Move to courses folder` option with keyboard arrows
 
-You're done. Check your directory layout :
+You're done.
+
+Now, check your new directory layout :
 
 `tree`{{execute}}

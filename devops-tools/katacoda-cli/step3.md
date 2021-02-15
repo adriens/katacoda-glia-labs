@@ -23,15 +23,20 @@ Finally give it a description :
 
 Next:
 
-1 - Interactively browse the options and choose `Beginner` by playing with keyboard arrows.
-2 - Opt for a 15 minutes course : `15 minutes`{{execute}}
-3 - Provide a number of steps : `3`{{execute}}
-4 - Last, choose the terminal format (the most simple yet powerful layout), by selecting `Terminal`
+- Interactively choose the default `Beginner` option by hitting `ENTER` in the terminal
+- Opt for a 15 minutes course : `15 minutes`{{execute}}
+- Provide a number of steps : `3`{{execute}}
+- Pick the image by selecting `Ubuntu 20.04`
+- Pick the first `Terminal` layout
 
-You're done, you have just created you first scenario, have a look at the directory layout :
+You should have the following message :
+
+`Scenario created successfully`
+
+So you're done, you have just created you first scenario, have a look at the directory layout :
 
 `tree`{{execute}}
 
 One remarkable things : everything is at the same level in the directory.
 
-We'd rather get a hierarchical strtucture of the code.
+We'd rather get a hierarchical strtucture of the code instead of this messy situation.
