@@ -17,7 +17,7 @@ Let's install `Node.js v15.x` :
 Once the [NodeSource repository](https://github.com/nodesource/distributions) is enabled,
 install Node.js and [npm](https://www.npmjs.com/) by running :
 
-`sudo apt-get install -y nodejs`
+`sudo apt-get install -y nodejs`{{execute}}
 
 Verify that the Node.js :
 

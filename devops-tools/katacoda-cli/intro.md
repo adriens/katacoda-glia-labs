@@ -7,5 +7,5 @@ with very few efforts.
 
 This tutorial will teach you :
 
-- [x] How to properly install it
-- [x] Use it by running standard tasks 
+- How to properly install it
+- Use it by running standard tasks 
