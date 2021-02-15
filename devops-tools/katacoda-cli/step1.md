@@ -22,17 +22,3 @@ and npm :
 `npm --version`{{execute}}
 
 were successfully installed by printing their versions.
-
-# Katacoda CLI install
-
-Finally install `katacoda` :
-
-`sudo npm install katacoda-cli --global`{{execute}}
-
-Print the version :
-
-`katacoda version`{{execute}}
-
-... then the (very useful) help command :
-
-`katacoda help`{{execute}}
