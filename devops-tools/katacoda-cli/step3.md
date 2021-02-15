@@ -1,42 +1,49 @@
-To discover all the katacoda scenarios options, just :
+Be aware how katacoda courses and scenarios are linked, keep in mind that
+there is a hierarchy.
+Using courses allows you to better organize your content.
 
-`katacoda help scenarios`{{execute}}
+In the following steps, you'll create that kind of hierarchy :
 
-Let's focus on creating a new scenario :
+- Course
+  - Scenario 1
+    - Intro
+    - Step 1
+    - Step 2
+    - ...
+    - Finish
+  - Scenario 2
 
-`katacoda scenarios:create`{{execute}}
+# Create a course
 
-And provide some answers :
+To be aware of all the available commands around courses management, just :
 
-Put the friendly url, best practice is to keep it short and lowercase :
+`katacoda help courses`{{execute}}
 
-`first-scenario`{{execute}}
+Let's create a course :
 
-Give it a title (keep it short) :
+`katacoda courses:create`{{execute}}
 
-`My first scenario`{{execute}}
+Next, interactively answer the questions :
 
-Finally give it a description :
+Put the course name. Keep it short (less than 15 characters is ok) and clear :
 
-`A brief description`{{execute}}
+`My first course`{{execute}}
 
+Then put a short yet understandable text to tell people what they will learn by running this
+course.
 
-Next:
+**Keep in mind that a course is a set of scenarios, so it could be "Deal with PostgreSQL techniques".**
 
-- Interactively choose the default `Beginner` option by hitting `ENTER` in the terminal
-- Opt for a 15 minutes course : `15 minutes`{{execute}}
-- Provide a number of steps : `3`{{execute}}
-- Pick the image by selecting `Ubuntu 20.04`
-- Pick the first `Terminal` layout
+`This course is cool, come discover it`{{execute}}
 
-You should have the following message :
+Next, the `friendly-url`, keeping it lower-case and short is a best practice.
 
-`Scenario created successfully`
+`first-course`{{execute}}
 
-So you're done, you have just created you first scenario, have a look at the directory layout :
+Now, you should have this status :
 
-`tree`{{execute}}
+`Course created successfully.`
 
-One remarkable things : everything is at the same level in the directory.
+You have created a first - yet empty - course.
 
-We'd rather get a hierarchical strtucture of the code instead of this messy situation.
+What we have to do next is to put scenarios in it.

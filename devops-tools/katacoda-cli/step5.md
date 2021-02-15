@@ -1,6 +1,15 @@
-To ensure your repo has a valid structure (ie. you'll be able to see it
-live on [Katacoda](https://www.katacoda.com/)), there is a dedicated command :
+Let's move our newly scenario in the proper Course.
 
-`katacoda validate:all`{{execute}}
+`katacoda courses:add:scenarios`{{execute}}
 
-Just hit `.`{{execute}} and all your courses and scenarios will be checked.
+Then :
+
+- Provide scenario path by hitting `first-scenario`{{execute}}
+- Provide course path by hitting `first-course`{{execute}}
+- Select the `Move to courses folder` option with keyboard arrows
+
+You're done.
+
+Now, check your new directory layout :
+
+`tree`{{execute}}

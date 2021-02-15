@@ -6,24 +6,28 @@
   "details": {
     "steps": [
       {
-        "title": "Install",
+        "title": "Prerequisites",
         "text": "step1.md"
       },
       {
-        "title": "Course creation",
+        "title": "Install",
         "text": "step2.md"
       },
       {
-        "title": "Sceario creation",
+        "title": "Course creation",
         "text": "step3.md"
       },
       {
-        "title": "Attach a scenario to a course",
+        "title": "Sceario creation",
         "text": "step4.md"
       },
       {
-        "title": "Validate",
+        "title": "Attach a scenario to a course",
         "text": "step5.md"
+      },
+      {
+        "title": "Validate",
+        "text": "step6.md"
       }
     ],
     "intro": {

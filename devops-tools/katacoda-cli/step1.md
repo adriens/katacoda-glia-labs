@@ -1,5 +1,3 @@
-# Prerequisites
-
 First add somme utilities :
 
 `sudo apt-get install -y tree`{{execute}}
