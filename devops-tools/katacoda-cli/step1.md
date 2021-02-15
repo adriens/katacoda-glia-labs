@@ -25,7 +25,7 @@ Verify that the Node.js :
 
 and npm :
 
-`npm --version`
+`npm --version`{{execute}}
 
 were successfully installed by printing their versions.
 
@@ -41,4 +41,4 @@ Print the version :
 
 ... then the (very useful) help command :
 
-`katacoda version`{{execute}}
+`katacoda help`{{execute}}

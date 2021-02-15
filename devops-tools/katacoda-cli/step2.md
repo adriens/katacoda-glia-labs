@@ -1,6 +1,3 @@
-# Intro
-
-
 Be aware how katacoda courses and scenarios are linked, keep in mind that
 there is a hierarchy.
 Using courses allows you to better organize your content.
