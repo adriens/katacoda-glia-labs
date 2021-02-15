@@ -1,6 +1,6 @@
 {
   "title": "DevOps Tools",
-  "description": "Useful to perform things the DevOPS way",
+  "description": "Useful tools to perform things the DevOPS way",
   "courses": [
     {
       "course_id": "katacoda-cli",
