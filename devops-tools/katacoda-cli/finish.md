@@ -2,4 +2,4 @@ You are done with this katacoda Quickstart. You are now able to create a set of 
 to push content on Katacoda.
 
 A lot of options are available on `kataocda-cli`, if you want to discover more, just let me know
-by tagging me on Twitter on this specific course.
+by tagging me (links below) on this specific course.

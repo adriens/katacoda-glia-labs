@@ -46,4 +46,4 @@ Now, you should have this status :
 
 You have created a first - yet empty - course.
 
-What we have to do next is to put scenarios in it.
+**What we have to do next is to put scenarios in it.**

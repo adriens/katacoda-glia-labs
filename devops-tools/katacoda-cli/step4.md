@@ -27,7 +27,7 @@ Next:
 - Opt for a 15 minutes course : `15 minutes`{{execute}}
 - Provide a number of steps : `3`{{execute}}
 - Pick the image by selecting `Ubuntu 20.04`
-- Pick the first `Terminal` layout
+- Pick the first (and default) `Terminal` layout
 
 You should have the following message :
 
@@ -37,6 +37,8 @@ So you're done, you have just created you first scenario, have a look at the dir
 
 `tree`{{execute}}
 
-One remarkable things : everything is at the same level in the directory.
+... and to the index file that references your scenario structure `first-scenario/index.json`{{open}}
+
+**One remarkable thing : everything is at the same level in the directory.**
 
 We'd rather get a hierarchical strtucture of the code instead of this messy situation.
