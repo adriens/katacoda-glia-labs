@@ -6,6 +6,11 @@
       "course_id": "kafka-quickstart",
       "title": "Kafka Quickstart",
       "description": "To discover first Kafka usage, the easy way"
+    },
+    {
+      "course_id": "kafka-connect",
+      "title": "Kafka connect",
+      "description": "A Kafka connect example use case"
     }
   ]
 }
