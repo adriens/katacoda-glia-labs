@@ -29,3 +29,19 @@ As paritions are tables, they are stored as tables and thus can be shown as clas
 
 
 `\dt`{{execute}}
+
+# Create the Q1 parttion
+
+Additionnaly, let's create the partition that will store the Q1 datas.
+
+First :
+
+- read carefully the following statement
+- draw a timeline to better understang which time range we are targetting
+
+At last, run the following statement and explain what happened :
+
+```
+CREATE TABLE logs_2021_Q1 PARTITION OF logs
+    FOR VALUES FROM ('2021-01-01') TO ('2021-04-01');
+```{{execute}}
