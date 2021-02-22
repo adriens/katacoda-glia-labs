@@ -6,7 +6,7 @@ In this step, we will produce messages according a specific structure :
     "properties": {
         "timestamp": {
             "type": "integer"
-        },        
+        },
         "phoneNumberEmitter": {
             "type": "string"
         },

@@ -36,5 +36,11 @@ password
 And ensure all messages are stored on sink database
 
 ```
-select "phoneNumberReceiver" receiver, message, "phoneNumberEmitter" emitter from sms;
+select
+    to_timestamp(timestamp) AT TIME ZONE 'Pacific/Noumea' as upddate,
+    "phoneNumberReceiver" receiver,
+    message,
+    "phoneNumberEmitter" emitter
+from sms
+order by timestamp desc;
 ```{{execute T4}}
