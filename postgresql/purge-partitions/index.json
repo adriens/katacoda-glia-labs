@@ -1,0 +1,58 @@
+{
+  "title": "Purge and query huge tables with partitioning",
+  "description": "Create and manage tables thanks to partitioning techniques. Compare executions plans, purge data....",
+  "difficulty": "Beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Postgres install",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create tables",
+        "text": "step2.md"
+      },
+      {
+        "title": "Explain plan",
+        "text": "step3.md"
+      },
+      {
+        "title": "Add partitions",
+        "text": "step4.md"
+      },
+      {
+        "title": "Put datas",
+        "text": "step5.md"
+      },
+      {
+        "title": "Partition impact on execution plan",
+        "text": "step6.md"
+      },
+      {
+        "title": "Delete operations and bloat",
+        "text": "step7.md"
+      },
+      {
+        "title": "Purge considerations",
+        "text": "step8.md"
+      },
+      {
+        "title": "Thank you",
+        "text": "step9.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}

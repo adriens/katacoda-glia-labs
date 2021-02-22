@@ -1,5 +1,11 @@
 {
   "title": "PostgreSQL Tricks",
   "description": "All kind of techniques, tip & tricks around PostgreSQL",
-  "courses": []
+  "courses": [
+    {
+      "course_id": "purge-partitions",
+      "title": "Bloat and partitioning",
+      "description": "Keep bloat under control thanks to partitioning"
+    }
+  ]
 }
