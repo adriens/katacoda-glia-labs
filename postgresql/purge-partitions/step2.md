@@ -1,5 +1,3 @@
-# Create tables
-
 We'll create two kind of tables : 
 
 - classical one

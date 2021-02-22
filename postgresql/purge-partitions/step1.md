@@ -1,5 +1,3 @@
-# Postgres install
-
 To make this tutorial playable anywhere (and play with PostgreSQL versions), we'll use
 docker.
 

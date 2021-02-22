@@ -1,5 +1,3 @@
-## Purge considerations
-
 Previously we could perform our month base purge strategy on our tables.
 
 Job done but:

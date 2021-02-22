@@ -1,5 +1,3 @@
-# Explain plan
-
 For now, we did not create a single index. This point is very important as
 in the next lines we'll se, thanks to execution plan, how the optimizer
 works on our two tables... even with a very low amount of rows.

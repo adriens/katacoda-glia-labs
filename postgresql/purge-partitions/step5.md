@@ -1,5 +1,3 @@
-# Put datas
-
 Let's make things a bit more interesting by putting data.
 
 With the following boilerplate code, we create rows. No need

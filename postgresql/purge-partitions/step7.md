@@ -1,5 +1,3 @@
-# Delete operations and bloat
-
 Now, let's perform some dummy purge action.
 
 Let's remove October rows with a "dumb" delete

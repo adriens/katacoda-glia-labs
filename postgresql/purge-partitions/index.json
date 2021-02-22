@@ -6,39 +6,39 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Postgres install",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Create tables",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Explain plan",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Add partitions",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Put datas",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Partition impact on execution plan",
         "text": "step6.md"
       },
       {
-        "title": "Step 7",
+        "title": "Delete operations and bloat",
         "text": "step7.md"
       },
       {
-        "title": "Step 8",
+        "title": "Purge considerations",
         "text": "step8.md"
       },
       {
-        "title": "Step 9",
+        "title": "Thank you",
         "text": "step9.md"
       }
     ],
