@@ -1,5 +1,5 @@
 {
-  "title": "Efficiently purge and query huge tables thanks to partitioning",
+  "title": "Purge and query huge tables with partitioning",
   "description": "Create and manage tables thanks to partitioning techniques. Compare executions plans, purge data....",
   "difficulty": "Beginner",
   "time": "15 minutes",

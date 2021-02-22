@@ -7,7 +7,10 @@ First, check that `docker` is installed by verifying its version :
 
 Then locally install PostgreSQL client :
 
-`sudo apt-get -y install postgresql-client`{{execute}}
+```
+sudo apt-get update
+sudo apt-get -y install postgresql-client
+```{{execute}}
 
 Next, pull and boot PostgreSQL:
 
