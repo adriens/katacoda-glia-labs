@@ -9,7 +9,6 @@ Download and extract `confluentinc-kafka-connect-jdbc` plugin
 clear
 wget https://d1i4a15mxbxib1.cloudfront.net/api/plugins/confluentinc/kafka-connect-jdbc/versions/10.0.1/confluentinc-kafka-connect-jdbc-10.0.1.zip \
 --directory-prefix plugins
-
 unzip -qq  plugins/confluentinc-kafka-connect-jdbc-10.0.1.zip -d plugins/
 ```{{execute}}
 
