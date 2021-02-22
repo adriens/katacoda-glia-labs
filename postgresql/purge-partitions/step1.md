@@ -3,20 +3,7 @@
 To make this tutorial playable anywhere (and play with PostgreSQL versions), we'll use
 docker.
 
-First, update your system :
-
-`sudo apt-get update`{{execute}}
-
-Then properly install docker:
-
-```
-sudo apt-get remove docker docker-engine docker.io
-sudo apt install docker.io
-sudo systemctl start docker
-sudo systemctl enable docker
-```{{execute}}
-
-Finally, `docker` is installed :
+First, check that `docker` is installed by verifying its version :
 
 `docker --version`{{execute}}
 
