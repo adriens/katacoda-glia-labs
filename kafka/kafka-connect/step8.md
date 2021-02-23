@@ -12,13 +12,6 @@ docker stop confluent-connect
 sh "sendSMSDaemon.sh"
 ```{{execute T5}}
 
-```
-curl -X POST -H "Content-Type: application/vnd.kafka.jsonschema.v2+json" \
-   -H "Accept: application/vnd.kafka.v2+json" \
-   --data '{"value_schema": "{\"type\":\"object\",\"properties\":{\"timestamp\":{\"type\": \"integer\"},\"phoneNumberEmitter\":{\"type\":\"string\"},\"phoneNumberReceiver\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"}},\"additionalProperties\":false}}", "records": [{"value": {"timestamp": 123456789,"phoneNumberEmitter":"665544","phoneNumberReceiver":"998877","message":"Talk is cheap. Show me the code"}}]}' \
-   "http://localhost:8082/topics/demo.json.sms"
-```{{execute T2}}
-
 ## Database operations
 
 ```
