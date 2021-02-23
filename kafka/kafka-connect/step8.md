@@ -9,7 +9,7 @@ docker stop confluent-connect
 ## Start the daemon
 
 ```
-sh "sendSMSDaemon.sh"
+bash "sendSMSDaemon.sh"
 ```{{execute T5}}
 
 ## Database operations

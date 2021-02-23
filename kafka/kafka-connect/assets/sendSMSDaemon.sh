@@ -10,10 +10,7 @@ urlRandomNamesApi="https://randomuser.me/api/?nat=gb&inc=name"
 urlKafkaApi="http://localhost:8082/topics/demo.json.sms"
 
 # tests phone numbers
-# corresponding to users filled in topic `demo.user` :
-# {"timestamp":1614033157,"phoneNumberEmitter":"123546","phoneNumberReceiver":"321654","message":"Testing is easier than debugging"}
-# {"timestamp":1614033160,"phoneNumberEmitter":"654987","phoneNumberReceiver":"789456","message":"A clever person solves a problem."}
-phoneNumbers="112233" "446655" "998877"
+phoneNumbers=("112233" "446655" "998877")
 
 # main
 while true; do
