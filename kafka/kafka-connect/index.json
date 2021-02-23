@@ -47,7 +47,9 @@
     "assets": {
       "host01": [
           {"file": "kafka-connect.yml", "target": "/root/", "chmod": "+x"},
-          {"file": "postgresql-sms-sink.json", "target": "/root/", "chmod": "+x"}
+          {"file": "postgresql-sms-sink.json", "target": "/root/", "chmod": "+x"},
+          {"file": "postgresql-sms-sink.json", "target": "/root/", "chmod": "+x"},
+          {"file": "sendSMSDaemon.sh", "target": "/root/", "chmod": "+x"}
       ]
     }
   },
@@ -55,7 +57,8 @@
     "terminals": [
       {"name": "Producer", "command": "echo \"producer terminal\"", "target": "host01"},
       {"name": "Consumer", "command": "echo \"consumer terminal\"", "target": "host01"},
-      {"name": "PostgreSQL", "command": "echo \"postgresql terminal\"", "target": "host01"}
+      {"name": "PostgreSQL", "command": "echo \"postgresql terminal\"", "target": "host01"},
+      {"name": "sendSMSDaemon", "command": "echo \"sendSMSDaemon terminal\"", "target": "host01"}
   ],
     "uilayout": "terminal"
   },
