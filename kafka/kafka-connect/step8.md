@@ -30,8 +30,8 @@ insert into bi_sms select * from sms;
 ```{{execute T4}}
 
 ```
-truncate sms
-vacuum full analyze sms
+truncate sms;
+vacuum full analyze sms;
 ```{{execute T4}}
 
 ## Start kafka-connect
