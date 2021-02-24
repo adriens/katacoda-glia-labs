@@ -7,13 +7,12 @@ First, create a dedicated demo directory :
 ```
 mkdir quickstart
 cd quickstart
+pwd
 ```{{execute}}
 
 Then, initialize Vagrant :
 
 ```
-mkdir quickstart
-cd quickstart
 vagrant init hashicorp/bionic64
 ```{{execute}}
 
