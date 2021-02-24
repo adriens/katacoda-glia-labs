@@ -16,13 +16,13 @@ Then, initialize Vagrant :
 vagrant init hashicorp/bionic64
 ```{{execute}}
 
-Boot the virtual machine :
+Boot the virtual machine (in fact, in our case, download the bow then run it) :
 
 ```
 vagrant up
 ```{{execute}}
 
-Log into the virtual machine :
+Login into the virtual machine :
 
 ```
 vagrant ssh
