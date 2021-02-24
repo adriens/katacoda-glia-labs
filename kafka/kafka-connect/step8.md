@@ -16,13 +16,13 @@ bash "sendSMSDaemon.sh"
 
 ## Database operations
 
-Create business and persistent data table : `bi_sms`
+Create *business data* table : `bi_sms`
 
 ```
 create table bi_sms as select * from sms where 1=0;
 ```{{execute T4}}
 
-Insert ALL rows from sms landing table `sms` to the business table
+Insert ALL rows from sms *landing table* `sms` to the business table
 
 ```
 insert into bi_sms select * from sms;
@@ -41,9 +41,15 @@ vacuum full analyze sms;
 docker start confluent-connect
 ```{{execute T1}}
 
+Retrieve his status :
+
 ```
 sh connectorPoller.sh
 ```{{execute T1}}
+
+Stop the polling :
+
+`^C`{{execute ctrl-seq}}
 
 ## Check the landing table
 
