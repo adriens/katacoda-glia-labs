@@ -1,4 +1,4 @@
-Here we will a basic example scenario
+Here we will see a basic example scenario
 
 ## Stop kafka-connect
 
@@ -16,19 +16,19 @@ bash "sendSMSDaemon.sh"
 
 ## Database operations
 
-Create business and persistent data table
+Create business and persistent data table : `bi_sms`
 
 ```
 create table bi_sms as select * from sms where 1=0;
 ```{{execute T4}}
 
-Insert ALL rows from sms landing table to the business table
+Insert ALL rows from sms landing table `sms` to the business table
 
 ```
 insert into bi_sms select * from sms;
 ```{{execute T4}}
 
-Clean the langing table
+Clean the landing table
 
 ```
 truncate sms;
@@ -42,8 +42,10 @@ docker start confluent-connect
 ```{{execute T1}}
 
 ```
-curl -X GET http://localhost:8083/connectors/postgresql-sms-sink-connector/status | jq
+sh connectorPoller.sh
 ```{{execute T1}}
+
+## Check the landing table
 
 ```
 select

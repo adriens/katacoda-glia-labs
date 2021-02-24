@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Prerequisites installation",
+        "title": "Prerequisites",
         "text": "step1.md"
       },
       {
@@ -30,7 +30,7 @@
         "text": "step6.md"
       },
       {
-        "title": "Troublecases",
+        "title": "Design for failures",
         "text": "step7.md"
       },
       {
@@ -48,9 +48,9 @@
       "host01": [
           {"file": "kafka-connect.yml", "target": "/root/", "chmod": "+x"},
           {"file": "postgresql-sms-sink.json", "target": "/root/", "chmod": "+x"},
-          {"file": "postgresql-sms-sink.json", "target": "/root/", "chmod": "+x"},
           {"file": "sendSMSDaemon.sh", "target": "/root/", "chmod": "+x"},
-          {"file": "produceMessage.sh", "target": "/root/", "chmod": "+x"}
+          {"file": "produceMessage.sh", "target": "/root/", "chmod": "+x"},
+          {"file": "connectorPoller.sh", "target": "/root/", "chmod": "+x"}
       ]
     }
   },
