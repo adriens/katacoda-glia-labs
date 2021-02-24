@@ -6,31 +6,31 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Install",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Create and destroy",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Initialize Project Directory",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Boot an Environment",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Play with synced folder",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Provision a Virtual Machine",
         "text": "step6.md"
       },
       {
-        "title": "Step 7",
+        "title": "Network configuration",
         "text": "step7.md"
       },
       {
