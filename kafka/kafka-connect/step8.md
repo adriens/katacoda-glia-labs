@@ -16,7 +16,7 @@ bash "sendSMSDaemon.sh"
 
 ## Database operations
 
-Create *business data* table : `bi_sms`
+Create *business table* : `bi_sms`
 
 ```
 create table bi_sms as select * from sms where 1=0;
