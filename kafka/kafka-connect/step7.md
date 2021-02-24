@@ -6,20 +6,30 @@ In the case where the sink database is not operational but the messsages continu
 docker stop postgres-sink
 ```{{execute T1}}
 
+```
+docker-compose --project-name kafka-connect-pgsql -f kafka-connect.yml ps
+```{{execute T1}}
+
 ## Produce some data
 
 ```
-{"phoneNumberEmitter":"123546","phoneNumberReceiver":"321654","message":"Il est bon ou quoi?"}
-{"phoneNumberEmitter":"654987","phoneNumberReceiver":"789456","message":"Net"}
-{"phoneNumberEmitter":"112233","phoneNumberReceiver":"445566","message":"Sakébon"}
-{"phoneNumberEmitter":"665544","phoneNumberReceiver":"998877","message":"Kalolo alors"}
-{"phoneNumberEmitter":"789987","phoneNumberReceiver":"456654","message":"Ok tal"}
+./produceMessage.sh 123546 321654 "Il est bon ou quoi?"
+./produceMessage.sh 654987 789456 "Net"
+./produceMessage.sh 112233 445566 "Sakébon"
+./produceMessage.sh 112233 998877 "Kalolo alors"
+./produceMessage.sh 112233 998877 "Ok tal"
 ```{{execute T2}}
 
 ## Check topic
 
 At this state, we can read `demo.json.sms` topic to be sure if the messages are in it.
 Go to `Consumer` tab to view it.
+
+## Check Kafka-connect status
+
+```
+curl -X GET http://localhost:8083/connectors/postgresql-sms-sink-connector/status | jq
+```{{execute T1}}
 
 #### Restart the sink database
 
@@ -28,10 +38,6 @@ docker start postgres-sink
 ```{{execute T1}}
 
 ## Restart kafka-connect task
-
-```
-curl -X GET http://localhost:8083/connectors/postgresql-sms-sink-connector/status | jq
-```{{execute T1}}
 
 The task `0` is on a [`FAILED`](https://docs.confluent.io/home/connect/monitoring.html#connector-and-task-status) state, we have to restart it to send all message stayed in the topic
 
@@ -48,5 +54,11 @@ curl -X GET http://localhost:8083/connectors/postgresql-sms-sink-connector/statu
 Let's check it out the database to ensure all messages are there.
 
 ```
-select "phoneNumberReceiver" receiver, message, "phoneNumberEmitter" emitter from sms;
+select
+    to_timestamp(timestamp) AT TIME ZONE 'Pacific/Noumea' as upddate,
+    "phoneNumberReceiver" receiver,
+    message,
+    "phoneNumberEmitter" emitter
+from sms
+order by timestamp desc;
 ```{{execute T4}}

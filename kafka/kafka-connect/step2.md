@@ -19,7 +19,8 @@ docker-compose --project-name kafka-connect-pgsql -f kafka-connect.yml ps
 With this single line command, we have :
 
 - a minimalist `kafka` environment with `zookeeper`
-- the [`confluent`](https://www.confluent.io/) elements :
+- an up and running [`postgreSQL`](https://www.postgresql.org/) database
+- the new [`confluent`](https://www.confluent.io/) elements :
   - [schema-registry](https://docs.confluent.io/platform/current/schema-registry/index.html) - *"It provides a RESTful interface for storing and retrieving your Avro, JSON Schema, and Protobuf schemas."*
   - [`kafka-connect`](https://docs.confluent.io/platform/current/connect/index.html) - *"Kafka Connect is a tool for scalably and reliably streaming data between Apache Kafka and other data systems."*
-- an up and running [`postgreSQL`](https://www.postgresql.org/) database
+
