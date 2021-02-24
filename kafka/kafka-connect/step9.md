@@ -13,7 +13,7 @@ In this scenario, we :
 
 ## Useful links and Resources
 
-* <https://github.com/adriens/presentation-kafka-connect>
+* [Github](https://github.com/adriens/presentation-kafka-connect) repository
 * [Slides presentation](https://adriens.github.io/presentation-kafka-connect/)
 * Do you know [Bloat](https://www.katacoda.com/glialabs/courses/postgresql/purge-partitions) ?
 * What is [Kafka connect](https://docs.confluent.io/platform/current/connect/index.html) ?
