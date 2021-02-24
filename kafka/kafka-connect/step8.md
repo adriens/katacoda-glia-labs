@@ -11,7 +11,7 @@ docker stop confluent-connect
 To send to topic kafka messages continuously
 
 ```
-bash "sendSMSDaemon.sh"
+bash sendSMSDaemon.sh
 ```{{execute T5}}
 
 ## Database operations
@@ -32,7 +32,7 @@ Clean the landing table
 
 ```
 truncate sms;
-vacuum full analyze sms;
+vacuum full verbose analyze sms;
 ```{{execute T4}}
 
 ## Restart kafka-connect
@@ -52,6 +52,10 @@ Stop the polling :
 `^C`{{execute ctrl-seq}}
 
 ## Check the landing table
+
+```
+select count(1) from sms;
+```{{execute T4}}
 
 ```
 select

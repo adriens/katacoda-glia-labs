@@ -9,11 +9,11 @@ docker stop postgres-sink
 ## Produce some data
 
 ```
-sh produceMessage.sh 123546 321654 "Il est bon ou quoi?"
-sh produceMessage.sh 654987 789456 "Net"
-sh produceMessage.sh 112233 445566 "Sakébon"
-sh produceMessage.sh 112233 998877 "Kalolo alors"
-sh produceMessage.sh 112233 998877 "Ok tal"
+./produceMessage.sh 123546 321654 "Il est bon ou quoi?"
+./produceMessage.sh 654987 789456 "Net"
+./produceMessage.sh 112233 445566 "Sakébon"
+./produceMessage.sh 112233 998877 "Kalolo alors"
+./produceMessage.sh 112233 998877 "Ok tal"
 ```{{execute T2}}
 
 ## Check topic
