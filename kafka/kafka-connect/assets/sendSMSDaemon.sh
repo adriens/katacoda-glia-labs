@@ -31,13 +31,13 @@ while true; do
     receiver=$((100000 + RANDOM % 999999))
 
     # print
-    echo -e "[$timestamp] [$emitter] [$receiver] [$message]"
+    echo -e "\r\n[$timestamp] [$emitter] [$receiver] [$message]"
 
     # post
     data='{"value_schema": "{\"type\":\"object\",\"properties\":{\"timestamp\":{\"type\": \"integer\"},\"phoneNumberEmitter\":{\"type\":\"string\"},\"phoneNumberReceiver\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"}},\"additionalProperties\":false}}", "records": [{"value": {"timestamp": '$timestamp',"phoneNumberEmitter":"'$emitter'", "message":"'$message'", "phoneNumberReceiver":"'$receiver'"}}]}'
     curl -s -H "Content-Type: application/vnd.kafka.jsonschema.v2+json" -H "Accept: application/vnd.kafka.v2+json" -X POST "$urlKafkaApi" -d "$data"
 
-    sleep 2;
+    sleep 1;
 
 done
 

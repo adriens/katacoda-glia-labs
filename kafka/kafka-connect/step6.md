@@ -3,11 +3,11 @@
 ## Produce messages
 
 ```
-echo {\"timestamp\": $(date +%s),\"phoneNumberEmitter\":\"123546\",\"phoneNumberReceiver\":\"321654\",\"message\":\"Testing is easier than debugging\"} | kafka-json-schema-console-producer --broker-list localhost:9092 --topic demo.json.sms --property schema.registry.url=http://localhost:8081 --property value.schema='{"type":"object","properties":{"timestamp":{"type": "integer"},"phoneNumberEmitter":{"type":"string"},"phoneNumberReceiver":{"type":"string"},"message":{"type":"string"}},"additionalProperties":false}'
-echo {\"timestamp\": $(date +%s),\"phoneNumberEmitter\":\"654987\",\"phoneNumberReceiver\":\"789456\",\"message\":\"A clever person solves a problem.\"} | kafka-json-schema-console-producer --broker-list localhost:9092 --topic demo.json.sms --property schema.registry.url=http://localhost:8081 --property value.schema='{"type":"object","properties":{"timestamp":{"type": "integer"},"phoneNumberEmitter":{"type":"string"},"phoneNumberReceiver":{"type":"string"},"message":{"type":"string"}},"additionalProperties":false}'
-echo {\"timestamp\": $(date +%s),\"phoneNumberEmitter\":\"112233\",\"phoneNumberReceiver\":\"445566\",\"message\":\"Real programmers don\'t comment their code.\"} | kafka-json-schema-console-producer --broker-list localhost:9092 --topic demo.json.sms --property schema.registry.url=http://localhost:8081 --property value.schema='{"type":"object","properties":{"timestamp":{"type": "integer"},"phoneNumberEmitter":{"type":"string"},"phoneNumberReceiver":{"type":"string"},"message":{"type":"string"}},"additionalProperties":false}'
-echo {\"timestamp\": $(date +%s),\"phoneNumberEmitter\":\"665544\",\"phoneNumberReceiver\":\"998877\",\"message\":\"Talk is cheap. Show me the code\"} | kafka-json-schema-console-producer --broker-list localhost:9092 --topic demo.json.sms --property schema.registry.url=http://localhost:8081 --property value.schema='{"type":"object","properties":{"timestamp":{"type": "integer"},"phoneNumberEmitter":{"type":"string"},"phoneNumberReceiver":{"type":"string"},"message":{"type":"string"}},"additionalProperties":false}'
-echo {\"timestamp\": $(date +%s),\"phoneNumberEmitter\":\"789987\",\"phoneNumberReceiver\":\"456654\",\"message\":\"The computer was born to solve problems\"} | kafka-json-schema-console-producer --broker-list localhost:9092 --topic demo.json.sms --property schema.registry.url=http://localhost:8081 --property value.schema='{"type":"object","properties":{"timestamp":{"type": "integer"},"phoneNumberEmitter":{"type":"string"},"phoneNumberReceiver":{"type":"string"},"message":{"type":"string"}},"additionalProperties":false}'
+sh produceMessage.sh 123546 321654 "Testing is easier..."
+sh produceMessage.sh 789456 321654 "A clever person"
+sh produceMessage.sh 112233 445566 "Real programmers..."
+sh produceMessage.sh 665544 998877 "Talk is cheap"
+sh produceMessage.sh 789987 456654 "The computer was born"
 ```{{execute T2}}
 
 Check it out the Consumer tabs !
