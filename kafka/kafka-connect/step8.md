@@ -16,19 +16,19 @@ bash "sendSMSDaemon.sh"
 
 ## Database operations
 
-### Create business and persistent data table
+Create business and persistent data table
 
 ```
 create table bi_sms as select * from sms where 1=0;
 ```{{execute T4}}
 
-### Insert ALL rows from sms landing table to the business table
+Insert ALL rows from sms landing table to the business table
 
 ```
 insert into bi_sms select * from sms;
 ```{{execute T4}}
 
-### Clean the langing table
+Clean the langing table
 
 ```
 truncate sms;
@@ -41,6 +41,9 @@ vacuum full analyze sms;
 docker start confluent-connect
 ```{{execute T1}}
 
+```
+curl -X GET http://localhost:8083/connectors/postgresql-sms-sink-connector/status | jq
+```{{execute T1}}
 
 ```
 select
@@ -50,4 +53,10 @@ select
     "phoneNumberEmitter" emitter
 from sms
 order by timestamp desc;
+```{{execute T4}}
+
+Exit
+
+```
+q
 ```{{execute T4}}

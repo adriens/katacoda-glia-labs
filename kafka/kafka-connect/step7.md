@@ -35,10 +35,6 @@ docker start postgres-sink
 
 ## Restart kafka-connect task
 
-```
-curl -X GET http://localhost:8083/connectors/postgresql-sms-sink-connector/status | jq
-```{{execute T1}}
-
 The task `0` is on a [`FAILED`](https://docs.confluent.io/home/connect/monitoring.html#connector-and-task-status) state, we have to restart it to send all message stayed in the topic
 
 ```
