@@ -6,6 +6,10 @@ Here we will see a basic example scenario
 docker stop confluent-connect
 ```{{execute T1}}
 
+```
+docker-compose --project-name kafka-connect-pgsql -f kafka-connect.yml ps
+```{{execute T1}}
+
 ## Start the daemon
 
 To send to topic kafka messages continuously

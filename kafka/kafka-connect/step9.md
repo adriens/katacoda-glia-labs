@@ -15,7 +15,6 @@ In this scenario, we :
 
 * <https://github.com/adriens/presentation-kafka-connect>
 * [Slides presentation](https://adriens.github.io/presentation-kafka-connect/)
-
 * Do you know [Bloat](https://www.katacoda.com/glialabs/courses/postgresql/purge-partitions) ?
 * What is [Kafka connect](https://docs.confluent.io/platform/current/connect/index.html) ?
 * [Schema Management](https://docs.confluent.io/platform/current/schema-registry/index.html) Overview

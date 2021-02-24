@@ -6,6 +6,10 @@ In the case where the sink database is not operational but the messsages continu
 docker stop postgres-sink
 ```{{execute T1}}
 
+```
+docker-compose --project-name kafka-connect-pgsql -f kafka-connect.yml ps
+```{{execute T1}}
+
 ## Produce some data
 
 ```
