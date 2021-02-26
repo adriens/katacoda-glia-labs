@@ -3,6 +3,7 @@ Here we will see a basic example scenario
 ## Stop kafka-connect
 
 ```
+clear
 docker stop confluent-connect
 ```{{execute T1}}
 
@@ -58,7 +59,7 @@ Stop the polling :
 ## Check the landing table
 
 ```
-select count(1) from sms;
+select count(1) as nb_lignes from sms;
 ```{{execute T4}}
 
 ```
