@@ -1,0 +1,63 @@
+{
+  "title": "Vagrant Quickstart",
+  "description": "A first approach to be up and running with Vagrant",
+  "difficulty": "Beginner",
+  "time": "25 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Install",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create and destroy",
+        "text": "step2.md"
+      },
+      {
+        "title": "Initialize Project Directory",
+        "text": "step3.md"
+      },
+      {
+        "title": "Boot an Environment",
+        "text": "step4.md"
+      },
+      {
+        "title": "Play with synced folder",
+        "text": "step5.md"
+      },
+      {
+        "title": "Provision a Virtual Machine",
+        "text": "step6.md"
+      },
+      {
+        "title": "Network configuration",
+        "text": "step7.md"
+      },
+      {
+        "title": "Step 8",
+        "text": "step8.md"
+      },
+      {
+        "title": "Step 9",
+        "text": "step9.md"
+      },
+      {
+        "title": "Step 10",
+        "text": "step10.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  },
+  "private": true
+}

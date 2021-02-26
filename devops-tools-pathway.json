@@ -6,6 +6,11 @@
       "course_id": "katacoda-cli",
       "title": "Master the katacoda cli",
       "description": "Learn how to manage katacoda content with the CLI"
+    },
+    {
+      "course_id": "vagrant-quickstart",
+      "title": "Vagrant Quickstart",
+      "description": "A first approach to be up and running with Vagrant"
     }
   ]
 }

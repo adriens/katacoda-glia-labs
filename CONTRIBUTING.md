@@ -8,13 +8,17 @@ To keep things in order, everything comes as an issue, so please take a look at 
 
 ## :raised_hands: Creation process
 
+Please respect the workflow on the [Project page](https://github.com/adriens/katacoda-glia-labs/projects/1) and move issues according to its status.
+
 1. Fill a dedicated issue template with your idea (be concise and explain what are the expected gains)
-2. Development process by a dedicated developer
-3. Scenario review by an another developer
-4. Loop(s) between developer and reviewer
-5. Demo to a customer that has never used the scenario
-6. Demo to an another new customer that has never used the scenario
-7. Scenario official release
+2. In the `index.json` of the scenarion, check `"private": true`
+3. Development process by a dedicated developer
+4. Scenario review by an another developer
+5. Loop(s) between developer and reviewer
+6. Demo to a customer that has never used the scenario
+7. Demo to an another new customer that has never used the scenario
+8. Switch to `"private": false`
+9. Scenario official release
 
 ## :rocket: Release
 
