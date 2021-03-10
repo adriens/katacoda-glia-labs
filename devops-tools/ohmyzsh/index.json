@@ -1,0 +1,54 @@
+{
+  "title": "Unleash your terminal with \"Oh My ZSH!\"",
+  "description": "Install, customize and use \"Oh My ZSH!\"",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Install",
+        "text": "step1.md"
+      },
+      {
+        "title": "Themes",
+        "text": "step2.md"
+      },
+      {
+        "title": "Plugins",
+        "text": "step3.md"
+      },
+      {
+        "title": "Cheatsheet - Commands",
+        "text": "step4.md"
+      },
+      {
+        "title": "Cheatsheet - Tab-completion",
+        "text": "step5.md"
+      },
+      {
+        "title": "Cheatsheet - Directory browsing",
+        "text": "step6.md"
+      },
+      {
+        "title": "Complete cheatsheet",
+        "text": "step7.md"
+      },
+      {
+        "title": "Community resources",
+        "text": "step8.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}

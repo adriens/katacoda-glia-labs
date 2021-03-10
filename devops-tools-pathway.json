@@ -11,6 +11,11 @@
       "course_id": "vagrant-quickstart",
       "title": "Vagrant Quickstart",
       "description": "A first approach to be up and running with Vagrant"
+    },
+    {
+      "course_id": "ohmyzsh",
+      "title": "Unleash your terminal with \"Oh My ZSH!\"",
+      "description": "Install, customize and use \"Oh My ZSH!\""
     }
   ]
 }
