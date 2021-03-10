@@ -6,7 +6,10 @@ In the case where the sink database is not operational but the messsages continu
 docker stop postgres-sink
 ```{{execute T1}}
 
+PostgreSQL down? Ensure it's real
+
 ```
+clear
 docker-compose --project-name kafka-connect-pgsql -f kafka-connect.yml ps
 ```{{execute T1}}
 
