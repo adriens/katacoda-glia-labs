@@ -19,21 +19,19 @@ To send to topic kafka messages continuously
 bash sendSMSDaemon.sh
 ```{{execute T5}}
 
-## 3. Database operations
-
-### 3.1 Create *business table* : `bi_sms`
+## 3.1 Create *business table* `bi_sms`
 
 ```
 create table bi_sms as select * from sms where 1=0;
 ```{{execute T4}}
 
-### 3.2 Insert ALL rows from sms *landing table* `sms` to the business table
+## 3.2 Insert ALL rows from the *landing table* `sms` to the business table
 
 ```
 insert into bi_sms select * from sms;
 ```{{execute T4}}
 
-### 3.3 Clean the landing table
+## 3.3 Clean the landing table
 
 ```
 truncate sms;
