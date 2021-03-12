@@ -16,6 +16,11 @@
       "course_id": "ohmyzsh",
       "title": "Unleash your terminal with \"Oh My ZSH!\"",
       "description": "Install, customize and use \"Oh My ZSH!\""
+    },
+    {
+      "course_id": "sdkman",
+      "title": "Install and setup a full Java environment",
+      "description": "Install SDKMAN! and set up a complete Java developement environment"
     }
   ]
 }
