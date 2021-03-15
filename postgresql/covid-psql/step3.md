@@ -35,7 +35,7 @@ select * from covid_nc_data ;
 ```{{execute}}
 
 
-Now load the file into the table
+Now load the file into the table locally stored on the server (remember the `git clone`).
 
 Make the magic happen :
 

@@ -10,6 +10,11 @@ Finally connect and create a demo database:
 ```
 export PGPASSWORD=docker
 psql -h localhost -U postgres -d postgres -c "create database covidnc"
+```{{execute}}
+
+Then connect :
+
+```
 psql -h localhost -U postgres covidnc
 ```{{execute}}
 

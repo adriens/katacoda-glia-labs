@@ -9,12 +9,12 @@ Then locally install PostgreSQL client :
 
 ```
 sudo apt-get update
-sudo apt-get -y install postgresql-client git
+sudo apt-get -y install postgresql-client git tree
 ```{{execute}}
 
 Get the target data
 
 ```
-cd
 git clone https://github.com/adriens/covid19-action-plan-nc.git
+tree covid19-action-plan-nc/
 ```{{execute}}

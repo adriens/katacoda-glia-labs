@@ -7,7 +7,7 @@ Now, dump each view into proper and dedicated `csv` files,
 \copy (SELECT * FROM report_tests_by_month) to '/tmp/report_tests_by_month.csv' with csv;
 \copy (SELECT * FROM report_nb_active_cases) to '/tmp/report_nb_active_cases.csv' with csv;
 \copy (SELECT * FROM report_nb_active_cases_month) to '/tmp/report_nb_active_cases_month.csv' with csv;
-```
+```{{execute}}
 
 Then exit `psql` and go back to the terminal :
 
