@@ -1,7 +1,8 @@
 Make your first chart from terminal for the terminal :
 
 ```
-termgraph  /tmp/report_tests_by_month.csv --title "Tests by month."
+clear
+termgraph  /tmp/report_tests_by_month.csv --title "Tests by month." --color green
 ```{{execute}}
 
 Then a new one :
@@ -22,11 +23,11 @@ echo -e "@ Month, NbActive\n$(cat /tmp/report_nb_active_cases_month.csv)" > /tmp
 ... and chart it :
 
 ```
-termgraph /tmp/report_nb_active_cases_month.csv --color {red,green}
+termgraph /tmp/report_nb_active_cases_month.csv
 ```{{execute}} 
  
 Finally, display the calendar heatmap of active cases :
 
 ``` 
-termgraph --calendar --start-dt 2020-03-18 /tmp/report_nb_active_cases.csv
+termgraph --calendar --start-dt 2020-03-18 /tmp/report_nb_active_cases.csv --title "Nb. Monthly active cases Calendar heatmap since March 2020"
 ```{{execute}}
