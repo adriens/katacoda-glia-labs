@@ -35,7 +35,7 @@ termgraph /tmp/report_nb_tests_dow.csv --custom-tick "😷" --width 20 --title "
 
 # Calendar heatmap
  
-Finally, display the calendar heatmap of active cases :
+Finally, display the calendar heatmap of active cases (the brighter, the heater) :
 
 ``` 
 termgraph --calendar --start-dt 2020-03-18 /tmp/report_nb_active_cases.csv --title "Nb. Monthly active cases Calendar heatmap since March 2020" --color yellow
