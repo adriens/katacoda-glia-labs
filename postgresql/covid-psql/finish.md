@@ -1,6 +1,6 @@
 That's all. I hope you enjoyed this small, fun, yet useful scenario.
 
-If so, juste star it and share it with others.
+If so, justestar it and share it with others.
 
 # Ressources
 
