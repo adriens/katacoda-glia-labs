@@ -125,7 +125,7 @@ order by to_char(jour, 'dy') desc;
 COMMENT ON VIEW report_nb_tests_dow IS 'Nb tests by day of week';
 ```{{execute}}
 
-Take a llook at it :
+Take a look at it :
 
 ```
 select *
