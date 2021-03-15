@@ -8,7 +8,7 @@ termgraph  /tmp/report_tests_by_month.csv --title "Nb. tests by month." --color 
 Then a new one :
 
 ```
-termgraph  /tmp/report_nb_active_cases_month.csv --title "Nb. active cases by month"
+termgraph  /tmp/report_nb_active_cases_month.csv --title "Nb. active cases by month" --color blue
 ```{{execute}}
 
 
@@ -38,5 +38,5 @@ termgraph /tmp/report_nb_tests_dow.csv --custom-tick "😷" --width 20 --title "
 Finally, display the calendar heatmap of active cases :
 
 ``` 
-termgraph --calendar --start-dt 2020-03-18 /tmp/report_nb_active_cases.csv --title "Nb. Monthly active cases Calendar heatmap since March 2020"
+termgraph --calendar --start-dt 2020-03-18 /tmp/report_nb_active_cases.csv --title "Nb. Monthly active cases Calendar heatmap since March 2020" --color yellow
 ```{{execute}}

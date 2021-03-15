@@ -1,4 +1,4 @@
-Next, pull and boot PostgreSQL:
+Next, pull, map our `csv` data directory and boot PostgreSQL:
 
 ```
 sudo docker pull postgres:13.1
@@ -15,6 +15,7 @@ psql -h localhost -U postgres -d postgres -c "create database covidnc"
 Then connect :
 
 ```
+clear
 psql -h localhost -U postgres covidnc
 ```{{execute}}
 

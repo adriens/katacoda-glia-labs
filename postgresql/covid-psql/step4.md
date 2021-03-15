@@ -131,3 +131,5 @@ Take a look at it :
 select *
 from report_nb_tests_dow;
 ```{{execute}}
+
+These reportings are pretty cool not really sexy : let's put some fun into the experience !

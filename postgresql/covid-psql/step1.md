@@ -16,5 +16,6 @@ Get the target data
 
 ```
 git clone https://github.com/adriens/covid19-action-plan-nc.git
+clear
 tree covid19-action-plan-nc/
 ```{{execute}}
