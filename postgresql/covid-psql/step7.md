@@ -2,7 +2,7 @@ Make your first chart from terminal for the terminal :
 
 ```
 clear
-termgraph  /tmp/report_tests_by_month.csv --title "Tests by month." --color green
+termgraph  /tmp/report_tests_by_month.csv --title "Nb. tests by month." --color green
 ```{{execute}}
 
 Then a new one :
@@ -12,7 +12,7 @@ termgraph  /tmp/report_nb_active_cases_month.csv --title "Nb. active cases by mo
 ```{{execute}}
 
 
-# Labels
+# Labels and stacked charts
 
 First add labels to the top of the file :
 
@@ -29,7 +29,7 @@ termgraph /tmp/report_nb_confirmes_vs_remis_month.csv --stacked --title "Monthly
 # Nb tests by day of week
 
 ```
-termgraph /tmp/report_nb_tests_dow.csv --custom-tick "🏃" --width 20 --title "Nb. tests by day of week"
+termgraph /tmp/report_nb_tests_dow.csv --custom-tick "😷" --width 20 --title "Nb. tests by day of week"
 ```{{execute}} 
 
 
