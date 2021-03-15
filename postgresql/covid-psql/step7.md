@@ -1,9 +1,4 @@
-# Notice
-
-Due to font issues, the charts won't have the aspect they mau have in real life on a real
-and well setup environment.
-
-For nice output samples, please visit the [termgraph project](https://github.com/mkaz/termgraph)
+Make your first chart from terminal for the terminal :
 
 ```
 termgraph  /tmp/report_tests_by_month.csv --title "Tests by month."
