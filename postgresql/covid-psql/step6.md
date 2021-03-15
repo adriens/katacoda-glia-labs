@@ -16,5 +16,6 @@ sudo pip3 install termgraph
 Finallny test that termgraph is properly installed :
 
 ```
+termgraph --version
 termgraph --help
 ```{{execute}}

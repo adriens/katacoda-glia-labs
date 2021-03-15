@@ -12,19 +12,28 @@ termgraph  /tmp/report_nb_active_cases_month.csv --title "Nb. active cases by mo
 ```{{execute}}
 
 
-Then a new one with labels :
+# Labels
 
 First add labels to the top of the file :
 
 ```
-echo -e "@ Month, NbActive\n$(cat /tmp/report_nb_active_cases_month.csv)" > /tmp/report_nb_active_cases_month.csv
+echo -e "@ NbConfirmed, NbRemissions \n$(cat /tmp/report_nb_confirmes_vs_remis_month.csv)" > /tmp/report_nb_confirmes_vs_remis_month.csv
 ```{{execute}}
 
-... and chart it :
+... Then chart it :
 
 ```
-termgraph /tmp/report_nb_active_cases_month.csv
+termgraph /tmp/report_nb_confirmes_vs_remis_month.csv --stacked --title "Monthly confirmed vs. remissions cases" --color {blue,red}
+```{{execute}}
+
+# Nb tests by day of week
+
+```
+termgraph /tmp/report_nb_tests_dow.csv --custom-tick "🏃" --width 20 --title "Nb. tests by day of week"
 ```{{execute}} 
+
+
+# Calendar heatmap
  
 Finally, display the calendar heatmap of active cases :
 
