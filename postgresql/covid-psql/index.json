@@ -1,0 +1,51 @@
+{
+  "title": "Play with COVID's csv file from psql",
+  "description": "Load COVID csv data into a PostgreSQL, make some reporting from cli only",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Prerequisites",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create database",
+        "text": "step2.md"
+      },
+      {
+        "title": "Load Data",
+        "text": "step3.md"
+      },
+      {
+        "title": "Reporting",
+        "text": "step4.md"
+      },
+      {
+        "title": "Charts in the terminal",
+        "text": "step5.md"
+      },
+      {
+        "title": "Charting prerequisites",
+        "text": "step6.md"
+      },
+      {
+        "title": "Produce charts",
+        "text": "step7.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  },
+  "private": true
+}

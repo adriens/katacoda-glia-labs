@@ -6,6 +6,11 @@
       "course_id": "purge-partitions",
       "title": "Bloat and partitioning",
       "description": "Keep bloat under control thanks to partitioning"
+    },
+    {
+      "course_id": "covid-psql",
+      "title": "Play with COVID's csv file from psql",
+      "description": "Load COVID csv data into a PostgreSQL, make some reporting from cli only"
     }
   ]
 }
