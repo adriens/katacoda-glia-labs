@@ -22,7 +22,8 @@ And take a look at the files you have just dumped in `/tmp` :
 
 ```
 cd /tmp
-ls -ltr
+clear
+ls -ltr report*
 ```{{execute}}
 
 Take a look at `/tmp/report_nb_active_cases_month.csv` :
