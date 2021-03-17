@@ -25,10 +25,11 @@ clear
 ls
 ```{{execute}}
 
-Then get a specifi file :
+Then get a specific file :
 
 ```
 lftp -c "open ftp://rasta:didi@127.0.0.1:21; get SURPRISE_DUDE"
+ls -ltr
 ```{{execute}}
 
 And here you are.
