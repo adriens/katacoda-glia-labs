@@ -1,7 +1,7 @@
 First install required packages :
 
 ```
-sudo apt-get install -y git zip unzip lftp
+sudo apt-get install -y git lftp
 ```{{execute}}
 
 Then prepare the remote ftp server we are going to use during our demo.
