@@ -16,7 +16,7 @@ cd ftpfiles
 
 Now, put some data in it.
 
-This time we won't use `curl` but `lftp` as it can also deal with http.
+👉This time we won't use `curl` but `lftp` as it can also deal with http.
 
 Open a `lftp` session so we can play interactively with it : 
 
