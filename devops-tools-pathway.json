@@ -21,6 +21,11 @@
       "course_id": "sdkman",
       "title": "Install and setup a full Java environment",
       "description": "Install SDKMAN! and set up a complete Java developement environment"
+    },
+    {
+      "course_id": "lftp-quickstart",
+      "title": "lftp quickstart",
+      "description": "lftp quickstart"
     }
   ]
 }
