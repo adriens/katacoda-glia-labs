@@ -36,6 +36,14 @@ To make this from pure code, even bookmark, simply add a bookmark :
 echo "newbookmark      ftp://rasta:didi@127.0.0.1:21" >> ~/.local/share/lftp/bookmarks
 ```{{execute}}
 
+And see if you see the bookark from the `lftp` side :
+
+```
+lftp
+bookmark list
+exit
+```{{execute}}
+
 Clean up the demo directory :
 
 ```
