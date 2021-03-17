@@ -1,0 +1,5 @@
+- [~/.lftprc conf file](https://gist.github.com/gaubert/822090)
+- [Nice and detailed tutorial](https://linuxconfig.org/lftp-tutorial-on-linux-with-examples)
+- [Wikipedia](https://en.wikipedia.org/wiki/Lftp)
+- [Homepage](https://lftp.tech/)
+- [manpage](https://lftp.tech/lftp-man.html)

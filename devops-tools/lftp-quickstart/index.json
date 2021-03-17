@@ -6,35 +6,35 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Prerequisites",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Run ftp server",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Get files locally",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Mirroring",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Put files",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "non-interactive commands",
         "text": "step6.md"
       },
       {
-        "title": "Step 7",
+        "title": "Bookmarks & configuration files",
         "text": "step7.md"
       },
       {
-        "title": "Step 8",
+        "title": "lftp ressources",
         "text": "step8.md"
       }
     ],
