@@ -16,7 +16,7 @@ Finally after a quite long synchronization process (we'll see later how to speed
 
 `tree`{{execute}}
 
-:ok_hand: Both dirs have been mirrored.
+👉Both dirs have been mirrored.
 
 Now let's say, we moved away one of our local files and wait for a new one from the remote server :
 
