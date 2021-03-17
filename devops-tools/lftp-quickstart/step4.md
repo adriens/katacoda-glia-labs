@@ -3,7 +3,7 @@ way : *we want a local mirror of the remote ftp directory*.
 
 
 
-Log back on ftp and get all files in a single shot :
+Log back on ftp and get all files in a single shot, then exit :
 
 
 ```
@@ -12,13 +12,13 @@ mirror
 exit
 ```{{execute}}
 
-Finally after a quite long synchronization process, check what we got locally :
+Finally after a quite long synchronization process (we'll see later how to speedup the process), check what we got locally :
 
 `tree`{{execute}}
 
-Both dirs have been mirrored.
+:ok_hand: Both dirs have been mirrored.
 
-Now let's say, we moved a way one of our local files and wait for a new one from the remote server :
+Now let's say, we moved away one of our local files and wait for a new one from the remote server :
 
 ```
 cd ~/demo
@@ -26,7 +26,7 @@ rm schemacrawler-16.14.1-distribution.zip schemacrawler-16.14.1-distribution.zip
 ls -la schemacrawler-16.14.1-distribution* 
 ```{{execute}}
 
-Now let's see what happens with the mirroring performances :
+Now let's see what happens :
 
 ```
 lftp -d -u rasta,didi -p 21 127.0.0.1:21

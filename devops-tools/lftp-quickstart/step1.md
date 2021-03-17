@@ -1,4 +1,4 @@
-First install required packages :
+First install the minimal required packages :
 
 ```
 sudo apt-get install -y git lftp
@@ -6,7 +6,7 @@ sudo apt-get install -y git lftp
 
 Then prepare the remote ftp server we are going to use during our demo.
 
-Prepare the directories :
+Prepare the directories (where the remote files will be hosted) :
 
 ```
 cd
@@ -18,9 +18,18 @@ Now, put some data in it.
 
 This time we won't use `curl` but `lftp` as it can also deal with http.
 
-Open a `lftp` session : 
+Open a `lftp` session so we can play interactively with it : 
 
 `lftp`{{execute}}
+
+then get the available commands :
+
+`help`{{execute}}
+
+Then get some help on the `get` command from the `https` protocol :
+
+`get`{{execute}}
+
 
 then get the files :
 
@@ -29,6 +38,8 @@ get https://github.com/schemacrawler/SchemaCrawler/releases/download/v16.14.1/sc
 get https://github.com/schemacrawler/SchemaCrawler/releases/download/v16.14.1/schemacrawler-16.14.1-distribution.zip.SHA-512
 exit
 ```{{execute}}
+
+👉 **Please notice that `lftp` supports web protocols**
 
 You now have the files locally :
 
@@ -41,7 +52,7 @@ sha512sum schemacrawler-16.14.1-distribution.zip
 cat schemacrawler-16.14.1-distribution.zip.SHA-512
 ```{{execute}}
 
-Now put some more files in the test directory :
+Now put (a lot) more files in the test directory :
 
 ```
 git clone https://github.com/schemacrawler/SchemaCrawler.git
