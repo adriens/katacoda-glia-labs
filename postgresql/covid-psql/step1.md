@@ -42,4 +42,4 @@ Then quit and go back to home directory :
 ```
 q
 cd
-```{{execute}}
+clear```{{execute}}
