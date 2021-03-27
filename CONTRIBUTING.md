@@ -27,7 +27,7 @@ As part of the release process, be sure to :
 - [x] Ask @adriens to create a short url that targets your course/scenario
 - [x] Create a QrCode on [Qr Code Monkey](https://www.qrcode-monkey.com/) that uses the previous short url **and** puts the proper logo :
 
-![KataCoda Logo](https://raw.githubusercontent.com/adriens/katacoda-glia-labs/main/resources/qrcode_katacoda_devops-labs.png)
+![KataCoda Logo](https://cdn.statically.io/gh/adriens/katacoda-glia-labs/main/resources/qrcode_katacoda_devops-labs.png)
 
 ## Examples
 
