@@ -26,6 +26,11 @@
       "course_id": "lftp-quickstart",
       "title": "lftp quickstart",
       "description": "lftp quickstart"
+    },
+    {
+      "course_id": "json-lint",
+      "title": "Lint json",
+      "description": "Lear how to write propoer json by linting them"
     }
   ]
 }
