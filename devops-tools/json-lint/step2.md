@@ -11,7 +11,7 @@ Not easy to read.
 But is it valid ?
 
 ```
-jsonlint --validate valid-one-lined.json
+jsonlint valid-one-lined.json
 ```{{execute}}
 
 
@@ -25,4 +25,16 @@ Now let's say we want to keep the pretty output :
 
 ```
 jsonlint --pretty-print valid-one-lined.json > pretty-valid-one-lined.json 
+```{{execute}}
+
+Then take a look at the final json :
+
+```
+cat pretty-valid-one-lined.json
+```{{execute}}
+
+... and put some colors :
+
+```
+cat pretty-valid-one-lined.json | jq
 ```{{execute}}

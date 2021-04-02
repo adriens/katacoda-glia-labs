@@ -1,7 +1,7 @@
 All we need on our system is:
 
 ```
-sudo apt-get -y install git npm jq tree
+sudo apt-get -y install git jq tree
 ```{{execute}}
 
 Then, install [JSON Lint](https://www.npmjs.com/package/jsonlint) :
