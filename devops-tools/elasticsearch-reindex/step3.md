@@ -1,37 +1,18 @@
-On initialization, we inject the sample data via [Logstash](https://www.elastic.co/fr/logstash/).
-Ensure the data is in the source elasticsearch database :
+Before to transfer the data, we have to prepare the ground like copy [mapping](https://www.elastic.co/guide/en/elasticsearch/reference/7.12/mapping.html), [settings](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-settings.html), [analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analyzer.html), etc.
+
+For this, we use the [elasticdump](https://github.com/elasticsearch-dump/elasticsearch-dump) tool :
+
+Mapping
 
 ```
-curl -XGET http://localhost:9201/contrat/_search?pretty
+docker run --rm -ti elasticdump/elasticsearch-dump \
+  --input=http://localhost:9201/contrat \
+  --output=http://localhost:9200/contrat \
+  --type=mapping
 ```{{execute}}
 
-## One-line command migration
-
-We use the endpoint [`_reindex`](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html) and we define the source and the destination configuration in the http request body :
+The destination is now ready to receive the data :
 
 ```
-{
-    "source": {
-        "remote": {
-            "host": "http://es-source:9201"
-        },
-        "index": "contrat",
-        "query": {
-            "match_all": {}
-        }
-    },
-    "dest": {
-        "index": "contrat"
-    }
-}
-```
-
-```
-curl -XPOST http://localhost:9200/_reindex?pretty \
-    -H "Content-Type: application/json" \
-    -d '{"source":{"remote":{"host":"http://es-source:9201"},"index":"contrat","query":{"match_all":{}}},"dest":{"index":"contrat"}}'
-```{{execute}}
-
-```
-curl -XGET http://localhost:9200/contrat/_search?pretty
+curl -X GET http://localhost:9201/contrat/_mapping?pretty
 ```{{execute}}

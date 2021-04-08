@@ -6,16 +6,20 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Installation tools",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Environment setup",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Index definition migration",
         "text": "step3.md"
+      },
+      {
+        "title": "Data migration",
+        "text": "step4.md"
       }
     ],
     "intro": {

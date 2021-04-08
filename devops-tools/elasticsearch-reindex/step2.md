@@ -1,12 +1,10 @@
+Launch services :
+
 ```
 docker-compose --project-name elasticsearch-data-migration up -d
 ```{{execute}}
 
 On waiting for it, a quick view on files availables and used here :
-
-```
-clear && tree
-```{{execute}}
 
 * **.env** : Environment variables used in `docker-compose.yml` file
 * **docker-compose.yml** : Contains all services (Elasticsearch, [Kibana](https://www.elastic.co/fr/kibana/), etc.) list to launch
@@ -14,14 +12,28 @@ clear && tree
 * **logstash.yml** & **logstash.conf** : [Logstash](https://www.elastic.co/logstash/) configuration files (used to insert source data)
 * **data.csv** : Sample data
 
-`data.csv` content (with pretty output)
+```
+clear && tree
+```{{execute}}
+
+`data.csv` content *(with pretty output)*
 
 ```
 cat data.csv | column -t -s,
 ```{{execute}}
 
-When finished, show the list containers' statuses
+Once finished, show the list containers' statuses
 
 ```
 docker-compose --project-name elasticsearch-data-migration ps
 ```{{execute}}
+
+Ensure Logstash is completely up & running 
+
+```
+docker logs logstash --follow | grep started
+```{{execute}}
+
+Exit the logging viewer
+
+`^C`{{execute ctrl-seq}}
