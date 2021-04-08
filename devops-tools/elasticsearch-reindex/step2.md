@@ -1,6 +1,9 @@
 Quick view on files availables and used here :
 
-`tree`{{execute}}
+```
+clear
+tree
+```{{execute}}
 
 * `.env` : Environment variables used in `docker-compose.yml` file
 * `docker-compose.yml` : Contains all services list to launch
