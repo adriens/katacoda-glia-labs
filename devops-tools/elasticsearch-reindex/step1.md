@@ -7,6 +7,8 @@ Description : Tools installation checking.
 
 ## docker & docker-compose
 
+> Get started with [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/)
+
 `docker --version`{{execute}}
 
 `docker-compose --version`{{execute}}
@@ -14,9 +16,5 @@ Description : Tools installation checking.
 ## cURL
 
 `curl -V`{{execute}}
-
-## tree
-
-`sudo apt-get -y install tree`{{execute}}
 
 All good, let's begin the scenario.
