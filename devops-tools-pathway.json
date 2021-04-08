@@ -31,6 +31,11 @@
       "course_id": "json-lint",
       "title": "Lint json",
       "description": "Lear how to write propoer json by linting them"
+    },
+    {
+      "course_id": "elasticsearch-reindex",
+      "title": "elasticsearch reindex",
+      "description": "Migrate elasticsearch data by _reindex"
     }
   ]
 }

@@ -1,0 +1,62 @@
+version: "3"
+
+services:
+
+  # sink
+  elasticsearch01:
+    container_name: es-cible
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELASTIC_SINK_VERSION}
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    volumes:
+      - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    ports:
+      - 9200:9200
+
+  kibana01:
+    container_name: kb-cible
+    image: docker.elastic.co/kibana/kibana:${ELASTIC_SINK_VERSION}
+    environment:
+      - ELASTICSEARCH_HOSTS=http://es-cible:9200
+    depends_on:
+      - elasticsearch01
+    ports:
+      - 5601:5601
+
+  # source
+  elasticsearch02:
+    container_name: es-source
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELASTIC_SOURCE_VERSION}
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+      - http.port=9201
+      - transport.tcp.port=9301
+    ports:
+      - 9201:9201
+
+  kibana02:
+    container_name: kb-source
+    image: docker.elastic.co/kibana/kibana:${ELASTIC_SOURCE_VERSION}
+    environment:
+      - ELASTICSEARCH_URL=http://es-source:9201
+    depends_on:
+      - elasticsearch02
+    ports:
+      - 5602:5601
+
+  # init
+  logstash:
+    container_name: logstash
+    image: docker.elastic.co/logstash/logstash:${LOGSTASH_VERSION}
+    volumes:
+      - ./data.csv:/usr/share/logstash/data.csv
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - ./logstash.yml:/usr/share/logstash/config/logstash.yml
+    depends_on:
+      - elasticsearch01
+      - elasticsearch02
+    links:
+      - elasticsearch01:elasticsearch01
+      - elasticsearch02:elasticsearch02
