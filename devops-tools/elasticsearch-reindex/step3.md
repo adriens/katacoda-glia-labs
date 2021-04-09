@@ -6,6 +6,7 @@ Mapping
 
 ```
 docker run --rm -ti elasticdump/elasticsearch-dump \
+  --net=host \
   --input=http://localhost:9201/contrat \
   --output=http://localhost:9200/contrat \
   --type=mapping
