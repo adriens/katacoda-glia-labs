@@ -5,8 +5,7 @@ For this, we use the [elasticdump](https://github.com/elasticsearch-dump/elastic
 Mapping
 
 ```
-docker run --rm -ti elasticdump/elasticsearch-dump \
-  --net=host \
+docker run --rm -ti --net=host elasticdump/elasticsearch-dump \
   --input=http://localhost:9201/contrat \
   --output=http://localhost:9200/contrat \
   --type=mapping

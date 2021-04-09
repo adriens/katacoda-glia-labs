@@ -9,7 +9,7 @@ services:
     environment:
       - xpack.security.enabled=false
       - discovery.type=single-node
-      - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
+      - "ES_JAVA_OPTS=-Xms128m -Xmx128m"
     volumes:
       - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     ports:
@@ -24,7 +24,7 @@ services:
       - discovery.type=single-node
       - http.port=9201
       - transport.tcp.port=9301
-      - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
+      - "ES_JAVA_OPTS=-Xms128m -Xmx128m"
     ports:
       - 9201:9201
 
