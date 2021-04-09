@@ -2,7 +2,7 @@
   "title": "elasticsearch reindex",
   "description": "Migrate elasticsearch data by _reindex",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "8 minutes",
   "details": {
     "steps": [
       {

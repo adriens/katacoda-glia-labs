@@ -1,3 +1,3 @@
-In this scenario, we transfer data **AND** mapping between two remote elasticsearch instances.
+Hi,
 
-v1
+In this scenario, we will transfer data **AND** mapping between two remote elasticsearch instances.

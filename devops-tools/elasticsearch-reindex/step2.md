@@ -19,12 +19,18 @@ clear
 docker-compose --project-name elasticsearch-data-migration ps
 ```{{execute}}
 
-Ensure Logstash is completely up & running 
+Ensure Logstash is completely up & running to inject data from the `data.csv` file...
 
 ```
 docker logs logstash --follow | grep started
 ```{{execute}}
 
-Exit the logging viewer
+... And have a similar output :
+
+```
+[2021-04-09T04:41:52,047][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+```
+
+Then exit the logging viewer
 
 `^C`{{execute ctrl-seq}}

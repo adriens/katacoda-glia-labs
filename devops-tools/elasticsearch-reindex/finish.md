@@ -1,3 +1,1 @@
 That's all !
-
-In this scenario, we transfer data **AND** mapping between two remote elasticsearch instances.
