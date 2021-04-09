@@ -14,5 +14,5 @@ docker run --rm -ti elasticdump/elasticsearch-dump \
 The destination is now ready to receive the data :
 
 ```
-curl -X GET http://localhost:9201/contrat/_mapping?pretty
+curl -X GET http://localhost:9200/contrat/_mapping?pretty
 ```{{execute}}

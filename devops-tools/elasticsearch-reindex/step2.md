@@ -12,19 +12,10 @@ On waiting for it, a quick view on files availables and used here :
 * **logstash.yml** & **logstash.conf** : [Logstash](https://www.elastic.co/logstash/) configuration files (used to insert source data)
 * **data.csv** : Sample data
 
-```
-clear && tree
-```{{execute}}
-
-`data.csv` content *(with pretty output)*
-
-```
-cat data.csv | column -t -s,
-```{{execute}}
-
 Once finished, show the list containers' statuses
 
 ```
+clear
 docker-compose --project-name elasticsearch-data-migration ps
 ```{{execute}}
 
