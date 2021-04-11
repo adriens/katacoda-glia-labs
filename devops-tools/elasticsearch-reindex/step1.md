@@ -1,5 +1,9 @@
 Description : Tools installation checking.
 
+## git
+
+`git --version`{{execute}}
+
 ## docker & docker-compose
 
 `docker --version`{{execute}}
@@ -11,5 +15,13 @@ Description : Tools installation checking.
 ## cURL
 
 `curl -V`{{execute}}
+
+## Get the project
+
+```
+git clone https://github.com/adriens/katacoda-devops-labs-elasticsearch-reindex.git
+cd katacoda-devops-labs-elasticsearch-reindex
+tree
+```{{execute}}
 
 All good, let's begin the scenario.
