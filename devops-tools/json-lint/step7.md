@@ -1,30 +1,30 @@
-Validate a json file using a schema
-
-
-Let's see the schema file, it shows what we expect regarding the data file.
+Wrong braces syntax
 
 ```
-cat schemas/data.schema.json
-```{{execute}}
-
-
-```
-jsonlint wrong-schema-format.json --validate schemas/data.schema.json
-```{{execute}}
-
-There is a problem with the "name" property, we have a boolean instead of string
-
-Let's fix it
-
-```
-sed -i '3s/.*/    "name": "Jean",/' wrong-schema-format.json
+clear
 ```{{execute}}
 
 ```
-cat wrong-schema-format.json
+cat wrong-braces-syntax.json
+```{{execute}}
+
+Here we missed the brace on the 8th line.
+
+```
+jsonlint wrong-braces-syntax.json
+```{{execute}}
+
+Let's fix this typo.
+
+```
+sed -i '7s/.*/        {"uuid": "9f5e468a-aa72-4cd0-937d-a0845bd053e4", "name": "kayak"}/' wrong-braces-syntax.json
+```{{execute}}
+
+```
+cat wrong-braces-syntax.json
 ```{{execute}}
 
 That's it !
 ```
-jsonlint wrong-schema-format.json --validate schemas/data.schema.json | jq
+jsonlint wrong-braces-syntax.json | jq
 ```{{execute}}
