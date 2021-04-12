@@ -1,6 +1,10 @@
 Missing value
 
 ```
+clear
+```{{execute}}
+
+```
 cat missing-value.json
 ```{{execute}}
 

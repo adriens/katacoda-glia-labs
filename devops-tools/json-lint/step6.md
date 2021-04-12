@@ -1,6 +1,10 @@
 Missing array item
 
 ```
+clear
+```{{execute}}
+
+```
 cat missing-array-item.json
 ```{{execute}}
 
@@ -13,7 +17,7 @@ jsonlint missing-array-item.json
 Let's fix this typo.
 
 ```
-sed -i '7s/.*/        {"uuid": "60a7c607-7819-4679-b325-f59233154db8", "name": "design"},/' missing-value.json
+sed -i '7s/.*/        {"uuid": "60a7c607-7819-4679-b325-f59233154db8", "name": "design"},/' missing-array-item.json
 ```{{execute}}
 
 ```

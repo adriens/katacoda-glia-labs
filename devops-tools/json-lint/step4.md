@@ -1,6 +1,10 @@
 Missing key
 
 ```
+clear
+```{{execute}}
+
+```
 cat missing-key.json
 ```{{execute}}
 

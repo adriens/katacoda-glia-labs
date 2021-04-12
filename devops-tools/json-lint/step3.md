@@ -1,4 +1,4 @@
-Let's see the most "popular" errors when writing a json file 
+Let's see the most "popular" errors when writing a json file and how to fix them with jsonlint
 
 Missing colon
 
