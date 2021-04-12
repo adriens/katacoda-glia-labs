@@ -35,7 +35,7 @@
     {
       "course_id": "elasticsearch-reindex",
       "title": "elasticsearch reindex",
-      "description": "Migrate elasticsearch data by _reindex"
+      "description": "Migrate elasticsearch 6.8.x data by _reindex"
     }
   ]
 }
