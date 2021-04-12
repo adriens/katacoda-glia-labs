@@ -17,7 +17,7 @@ jsonlint wrong-braces-syntax.json
 Let's fix this typo.
 
 ```
-sed -i '7s/.*/        {"uuid": "9f5e468a-aa72-4cd0-937d-a0845bd053e4", "name": "kayak"}/' wrong-braces-syntax.json
+sed -i '8s/.*/        {"uuid": "9f5e468a-aa72-4cd0-937d-a0845bd053e4", "name": "kayak"}/' wrong-braces-syntax.json
 ```{{execute}}
 
 ```
