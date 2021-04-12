@@ -27,16 +27,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-          {"file": ".env", "target": "/root/", "chmod": "+x"},
-          {"file": "data.csv", "target": "/root/", "chmod": "+x"},
-          {"file": "docker-compose.yml", "target": "/root/", "chmod": "+x"},
-          {"file": "elasticsearch.yml", "target": "/root/", "chmod": "+x"},
-          {"file": "logstash.conf", "target": "/root/", "chmod": "+x"},
-          {"file": "logstash.yml", "target": "/root/", "chmod": "+x"}
-      ]
     }
   },
   "environment": {
