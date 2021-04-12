@@ -2,10 +2,16 @@ Before to transfer the data, we have to prepare the ground like copy [mapping](h
 
 For this, we use the [elasticdump](https://github.com/elasticsearch-dump/elasticsearch-dump) tool :
 
+Installation via `npm` :
+
+```
+npm install elasticdump -g
+```{{execute}}
+
 Mapping
 
 ```
-docker run --rm -ti --net=host elasticdump/elasticsearch-dump \
+elasticdump \
   --input=http://localhost:9201/contrat \
   --output=http://localhost:9200/contrat \
   --type=mapping
