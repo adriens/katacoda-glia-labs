@@ -5,10 +5,6 @@ Now, dump each view into proper and dedicated `csv` files,
 
 ```
 \copy (SELECT * FROM report_tests_by_month) to '/tmp/report_tests_by_month.csv' with csv;
-\copy (SELECT * FROM report_nb_active_cases) to '/tmp/report_nb_active_cases.csv' with csv;
-\copy (SELECT * FROM report_nb_active_cases_month) to '/tmp/report_nb_active_cases_month.csv' with csv;
-\copy (SELECT * FROM report_nb_confirmes_vs_remis_days) to '/tmp/report_nb_confirmes_vs_remis_days.csv' with csv;
-\copy (SELECT * FROM report_nb_confirmes_vs_remis_month) to '/tmp/report_nb_confirmes_vs_remis_month.csv' with csv;
 \copy (SELECT * FROM report_nb_tests_dow) to '/tmp/report_nb_tests_dow.csv' with csv;
 \copy (SELECT * FROM report_nb_vaccines_daily) to '/tmp/report_nb_vaccines_daily.csv' with csv;
 \copy (SELECT * FROM report_nb_vaccines_monthly) to '/tmp/report_nb_vaccines_monthly.csv' with csv;
@@ -28,11 +24,11 @@ clear
 ls -ltr report*
 ```{{execute}}
 
-Take a look at `/tmp/report_nb_active_cases_month.csv` :
+Take a look at `/tmp/report_tests_by_month.csv` :
 
 
 ```
-cat report_nb_active_cases_month.csv
+cat report_tests_by_month.csv
 ```{{execute}}
 
 We have the required `csv` data files.

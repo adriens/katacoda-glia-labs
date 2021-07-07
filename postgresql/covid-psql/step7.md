@@ -5,26 +5,6 @@ clear
 termgraph  /tmp/report_tests_by_month.csv --title "Nb. tests by month." --color green
 ```{{execute}}
 
-Then a new one :
-
-```
-termgraph  /tmp/report_nb_active_cases_month.csv --title "Nb. active cases by month" --color blue
-```{{execute}}
-
-
-# Labels and stacked charts
-
-First add labels to the top of the file :
-
-```
-echo -e "@ NbConfirmed, NbRemissions \n$(cat /tmp/report_nb_confirmes_vs_remis_month.csv)" > /tmp/report_nb_confirmes_vs_remis_month.csv
-```{{execute}}
-
-... Then chart it :
-
-```
-termgraph /tmp/report_nb_confirmes_vs_remis_month.csv --stacked --title "Monthly confirmed vs. remissions cases" --color {blue,red}
-```{{execute}}
 
 # Nb tests by day of week
 
@@ -58,13 +38,4 @@ Then chart it :
 
 ```
 termgraph /tmp/report_nb_vaccines_monthly.csv --stacked --title "Monthly vaccines" --color {blue,red}
-```{{execute}}
-
-
-# Calendar heatmap
- 
-Finally, display the calendar heatmap of active cases (the brighter, the heater) :
-
-``` 
-termgraph --calendar --start-dt 2020-03-18 /tmp/report_nb_active_cases.csv --title "Nb. Monthly active cases Calendar heatmap since March 2020" --color yellow
 ```{{execute}}
