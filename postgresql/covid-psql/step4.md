@@ -94,4 +94,45 @@ from report_nb_vaccines_monthly;
 ```{{execute}}
 
 
+# Nb. of active cases by month
+
+```
+create view report_active_cases_by_month
+as
+select to_char(jour, 'YYYY-MM') as "Month",
+max(nb_confi) as "Nb. Confirmed"
+from covid_nc_data
+group by to_char(jour, 'YYYY-MM')
+order by to_char(jour, 'YYYY-MM') desc;
+
+COMMENT ON VIEW report_active_cases_by_month IS 'Nb.confirmed cases by month';
+```{{execute}}
+
+Anf give it a try :
+
+```
+select * from report_active_cases_by_month;
+```{{execute}}
+
+
+# Quarantine evolution by month
+
+```
+create view report_quarantine_evolution_by_month
+as
+select sum(nb_quarant),
+to_char(jour, 'YYYY-MM')
+from covid_nc_data
+group by to_char(jour, 'YYYY-MM')
+order by to_char(jour, 'YYYY-MM') desc;
+
+COMMENT ON VIEW report_quarantine_evolution_by_month IS 'Cumulative nb of quarantine by month';
+```{{execute}}
+
+And give it a try :
+
+```
+select * from report_quarantine_evolution_by_month;
+```{{execute}}
+
 These reportings are pretty cool not really sexy : let's put some fun into the experience !

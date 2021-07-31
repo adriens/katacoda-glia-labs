@@ -8,6 +8,8 @@ Now, dump each view into proper and dedicated `csv` files,
 \copy (SELECT * FROM report_nb_tests_dow) to '/tmp/report_nb_tests_dow.csv' with csv;
 \copy (SELECT * FROM report_nb_vaccines_daily) to '/tmp/report_nb_vaccines_daily.csv' with csv;
 \copy (SELECT * FROM report_nb_vaccines_monthly) to '/tmp/report_nb_vaccines_monthly.csv' with csv;
+\copy (SELECT * FROM report_active_cases_by_month) to '/tmp/report_active_cases_by_month.csv' with csv;
+\copy (SELECT * FROM report_quarantine_evolution_by_month) to '/tmp/report_quarantine_evolution_by_month.csv' with csv;
 ```{{execute}}
 
 Then exit `psql` and go back to the terminal :

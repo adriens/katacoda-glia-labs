@@ -39,3 +39,17 @@ Then chart it :
 ```
 termgraph /tmp/report_nb_vaccines_monthly.csv --stacked --title "Monthly vaccines" --color {blue,red}
 ```{{execute}}
+
+# Nb. of active cases by month
+
+```
+clear
+termgraph  /tmp/report_active_cases_by_month.csv --title "Nb. active cases by month." --color green
+```{{execute}}
+
+# Cumulative quarantine by month
+
+```
+clear
+termgraph  /tmp/report_quarantine_evolution_by_month.csv --title "Cumulative quarantine by month." --color green
+```{{execute}}
