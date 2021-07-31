@@ -120,8 +120,8 @@ select * from report_active_cases_by_month;
 ```
 create view report_quarantine_evolution_by_month
 as
-select sum(nb_quarant),
-to_char(jour, 'YYYY-MM')
+select to_char(jour, 'YYYY-MM'),
+sum(nb_quarant)
 from covid_nc_data
 group by to_char(jour, 'YYYY-MM')
 order by to_char(jour, 'YYYY-MM') desc;
