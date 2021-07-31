@@ -57,4 +57,6 @@ termgraph  /tmp/report_quarantine_evolution_by_month.csv --title "Cumulative qua
 
 # Conclusion
 
+```
 echo "Vaccinez-vous 🙌" | boxes -d boy
+```{{execute}}
