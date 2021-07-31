@@ -53,3 +53,8 @@ termgraph  /tmp/report_active_cases_by_month.csv --title "Nb. active cases by mo
 clear
 termgraph  /tmp/report_quarantine_evolution_by_month.csv --title "Cumulative quarantine by month." --color green
 ```{{execute}}
+
+
+# Conclusion
+
+echo "Vaccinez-vous 🙌" | boxes -d boy

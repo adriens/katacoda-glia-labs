@@ -9,7 +9,7 @@ Then locally install PostgreSQL client :
 
 ```
 sudo apt-get update
-sudo apt-get -y install postgresql-client git tree
+sudo apt-get -y install postgresql-client git tree boxes
 ```{{execute}}
 
 Get the target data
